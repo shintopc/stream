@@ -1,0 +1,259 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  
+}
+
+/* Background container */
+#bg-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Aurora animation styles */
+.aurora {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    mix-blend-mode: darken;
+    pointer-events: none;
+}
+
+.aurora__item {
+    overflow: hidden;
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+    filter: blur(1rem);
+    mix-blend-mode: overlay;
+}
+
+.aurora__item:nth-of-type(1) {
+    top: -50%;
+    animation: aurora-border 6s ease-in-out infinite, aurora-1 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(2) {
+    background-color: #ffc640;
+    right: 0;
+    top: 0;
+    animation: aurora-border 6s ease-in-out infinite, aurora-2 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(3) {
+    background-color: #33ff8c;
+    left: 0;
+    bottom: 0;
+    animation: aurora-border 6s ease-in-out infinite, aurora-3 8s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(4) {
+    background-color: #e54cff;
+    right: 0;
+    bottom: -50%;
+    animation: aurora-border 6s ease-in-out infinite, aurora-4 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+    0% { top: 0; right: 0; }
+    50% { top: 100%; right: 75%; }
+    75% { top: 100%; right: 25%; }
+    100% { top: 0; right: 0; }
+}
+
+@keyframes aurora-2 {
+    0% { top: -50%; left: 0%; }
+    60% { top: 100%; left: 75%; }
+    85% { top: 100%; left: 25%; }
+    100% { top: -50%; left: 0%; }
+}
+
+@keyframes aurora-3 {
+    0% { bottom: 0; left: 0; }
+    40% { bottom: 100%; left: 75%; }
+    65% { bottom: 40%; left: 50%; }
+    100% { bottom: 0; left: 0; }
+}
+
+@keyframes aurora-4 {
+    0% { bottom: -50%; right: 0; }
+    50% { bottom: 0%; right: 40%; }
+    90% { bottom: 50%; right: 25%; }
+    100% { bottom: -50%; right: 0; }
+}
+
+@keyframes aurora-border {
+    0% { border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%; }
+    25% { border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%; }
+    50% { border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%; }
+    75% { border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%; }
+    100% { border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%; }
+}
+
+/* Content Container */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Heading */
+.h1 {
+    font-size: 1.5em);
+    font-weight: 300;
+    letter-spacing: clamp(-1.75px, -0.25vw, -3.5px);
+    position: relative;
+    overflow: hidden;
+    color:yellow;
+    margin: 0;
+}
+
+/* Buttons Container */
+.buttons-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+/* Row of Buttons */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Responsive design */
+}
+
+/* Button Style */
+.button {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 155, 235, 0.8);
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    margin: 10px;
+    background-size: cover;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+}
+/* Set background image for the first button */
+#radio1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Club_FM_Logo.jpg');
+  background-size: cover;
+}
+
+#radio2 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radiomalayalam986.jpg');
+  background-size: cover;
+}
+#radio3 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radioasia947.jpg');
+  background-size: cover;
+}
+#radio4 {
+    background-image: url('https://radiosindia.com/images/radiokeralam.jpg');
+  background-size: cover;
+}
+#radio5 {
+    background-image: url('https://liveradios.in/wp-content/uploads/malayalamradio.jpg');
+  background-size: cover;
+}
+#radio6 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radiomalayalamusa.jpg');
+  background-size: cover;
+}
+#radio7 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radiomalayalam.jpg');
+  background-size: cover;
+}
+#radio8 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radiolemon.jpg');
+  background-size: cover;
+}
+
+
+/* Background images for TV buttons */
+#tv1 { background-image: url('https://yt3.googleusercontent.com/f6tEYjB34zD0Z4U93w9UFJkBiGpdryrUj8KKS9IuIEjVvD12Bm9m5n5aBfwWbgIRB-r5FOYyCjc=s160-c-k-c0x00ffffff-no-rj'); }
+#tv2 { background-image: url('https://yt3.googleusercontent.com/gizUTRt3mGlEsAEfvvLWR9PIaTAeOhXBT89pTuQ6CcrAww1tWRlcskmWVK9sahEf-KWZZ3iJCw=s160-c-k-c0x00ffffff-no-rj'); }
+#tv3 { background-image: url('https://yt3.googleusercontent.com/eqbZ6s1e5--bLtQT-w_COL6u7ajCp_cUwtc-yXUntjsmXwjflWaFgKRrP0ao02Zhw3e_7zZIfA=s160-c-k-c0x00ffffff-no-rj'); }
+#tv4 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
+
+/* Radio and TV Player */
+.player, .tv-player {
+    width: calc(330px + 20px); /* width of 2 buttons + gap */
+    max-width: 600px;
+    margin: 20px 0;
+  
+    
+    
+}
+
+audio, video {
+    width: 100%;
+}
+
+/* TV Player */
+#tvPlayer {
+    height: 315px;
+}
+
+/* Footer Text */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+a {
+    color: #fffff;
+    text-decoration:underline  dotted white;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        
+}
+.marquee-container {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+
+marquee {
+    color: #FFFF00; /* Neon yellow text for marquee */
+    font-size: 16px;
+}
