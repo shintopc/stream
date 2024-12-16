@@ -207,7 +207,7 @@ marquee {
   height: 60px;
   border: none;
   border-radius: 50%;
-  background-color: #4CAF50;
+  background-color: #FF0000;
   color: white;
   font-size: 24px;
   cursor: pointer;
@@ -226,7 +226,7 @@ marquee {
   display: inline-block;
   padding: 10px 15px;
   font-size: 14px;
-  background-color: #008CBA;
+  background-color: #800000;
   color: white;
   text-decoration: none;
   border: none;
