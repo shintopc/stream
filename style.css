@@ -1,0 +1,226 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.tab:hover {
+  transform: scale(1.05);
+}
+
+/* Radio Tab Style */
+.tab-radio {
+  background-color: #FF4500; /* Orange-Red */
+}
+
+.tab-radio:hover {
+  background-color: #FF6347; /* Light Coral */
+}
+
+/* TV Tab Style */
+.tab-tv {
+  background-color: #1E90FF; /* Dodger Blue */
+}
+
+.tab-tv:hover {
+  background-color: #6495ED; /* Cornflower Blue */
+}
+
+
+/* Background container */
+#bg-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Set height to 100% of the viewport */
+    z-index: -1;
+    background-color: black; /* Keep background black */
+    overflow-y: hidden; /* Hide vertical scrolling */
+}
+
+svg {
+    width: 100%;
+    height: 100vh; /* Ensure the SVG takes full height of the viewport */
+    display: block; /* Remove any extra space below the SVG */
+}
+
+/* Content Container */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Heading */
+.h1 {
+    font-size: 1.5em);
+    font-weight: 300;
+    letter-spacing: clamp(-1.75px, -0.25vw, -3.5px);
+    position: relative;
+    overflow: hidden;
+    color:yellow;
+    margin: 0;
+}
+
+/* Buttons Container */
+.buttons-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+/* Row of Buttons */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Responsive design */
+}
+
+/* Button Style */
+.button {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 155, 235, 0.8);
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    margin: 10px;
+    background-size: cover;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+}
+/* Set background image for the first button */
+#radio1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Club_FM_Logo.jpg');
+  background-size: cover;
+}
+
+#radio2 {
+    background-image: url('https://onlineradiofm.in/assets/image/radio/180/unnamed.webp');
+  background-size: cover;
+}
+#radio3 {
+    background-image: url('https://onlineradiofm.in/assets/image/radio/180/Radio-Mattoli.jpg');
+  background-size: cover;
+}
+#radio4 {
+    background-image: url('https://radiosindia.com/images/radiokeralam.jpg');
+  background-size: cover;
+}
+#radio5 {
+    background-image: url('https://liveradios.in/wp-content/uploads/malayalamradio.jpg');
+  background-size: cover;
+}
+#radio6 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radiomalayalamusa.jpg');
+  background-size: cover;
+}
+#radio7 {
+    background-image: url('https://onlineradiofm.in/assets/image/radio/180/Mazhavil-FM.jpg');
+  background-size: cover;
+}
+#radio8 {
+    background-image: url('https://liveradios.in/wp-content/uploads/radiolemon.jpg');
+  background-size: cover;
+}
+#radio9 {
+    background-image: url('https://onlineradiofm.in/assets/image/radio/180/radio-media-village.png');
+  background-size: cover;
+}
+
+/* Background images for TV buttons 
+#tv1 { background-image: url('https://yt3.googleusercontent.com/f6tEYjB34zD0Z4U93w9UFJkBiGpdryrUj8KKS9IuIEjVvD12Bm9m5n5aBfwWbgIRB-r5FOYyCjc=s160-c-k-c0x00ffffff-no-rj'); }
+#tv2 { background-image: url('https://yt3.googleusercontent.com/gizUTRt3mGlEsAEfvvLWR9PIaTAeOhXBT89pTuQ6CcrAww1tWRlcskmWVK9sahEf-KWZZ3iJCw=s160-c-k-c0x00ffffff-no-rj'); }
+#tv3 { background-image: url('https://yt3.googleusercontent.com/eqbZ6s1e5--bLtQT-w_COL6u7ajCp_cUwtc-yXUntjsmXwjflWaFgKRrP0ao02Zhw3e_7zZIfA=s160-c-k-c0x00ffffff-no-rj'); }
+#tv4 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
+#tv5 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_nNiHUlaF-60oiZqJHFF1N3uFek7UokY1i1OkmtOyW7gpQ=s160-c-k-c0x00ffffff-no-rj'); }
+#tv6 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
+ Radio and TV Player */
+.player, .tv-player {
+    width: calc(330px + 20px); /* width of 2 buttons + gap */
+    max-width: 600px;
+    margin: 20px 0;
+  
+    
+    
+}
+
+audio, video {
+    width: 100%;
+}
+
+/* TV Player */
+#tvPlayer {
+    height: 315px;
+}
+
+/* Footer Text */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+a {
+    color: #FFDF00;
+    
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        
+}
+.marquee-container {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+
+marquee {
+    color: #FFFF00; /* Neon yellow text for marquee */
+    font-size: 16px;
+}
