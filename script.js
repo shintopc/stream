@@ -30,9 +30,7 @@ window.addEventListener("wheel", function (event) {
     window.scrollBy(0, scrollAmount); // Scroll down
   }
 });
-
-
 function toggleButtons() {
-  const buttons = document.getElementById("secondary-buttons");
-  buttons.classList.toggle("hidden");
+  const additionalButtons = document.getElementById("additionalButtons");
+  additionalButtons.classList.toggle("hidden");
 }
