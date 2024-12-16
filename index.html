@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +8,15 @@
 </head>
 
 <body>
-  <div class="tab-container">
-    <a href="radio.html" class="tab tab-radio">Radio</a>
-    <a href="tv.html" class="tab tab-tv">TV</a>
+  
+  <!-- Floating Button -->
+  <div class="floating-container">
+    <button class="main-button" onclick="toggleButtons()">☰</button>
+    <div id="secondary-buttons" class="hidden">
+      <a href="radio.html" class="button radio-button">Radio</a>
+      <a href="tv.html" class="button tv-button">TV</a>
+    </div>
   </div>
-  
-  
   
 <!-- Background SVG Animation -->
 <div id="bg-wrap">
@@ -110,7 +111,7 @@
       <audio id="radioPlayer" controls></audio>
     </div>
 
-    <!-- TV Buttons 
+    <!-- TV Buttons -->
 
     <div class="buttons-container">
 
@@ -128,7 +129,7 @@
 
       </div>
 
- 
+      <!-- TV Player -->
 
       <div class="tv-player">
   <iframe id="tvPlayer"
@@ -138,16 +139,14 @@
 </div>
 
     </div>
-
--->
 <div class="marquee-container">
             <marquee behavior="scroll" direction="left">Made by Shinto PC</marquee>
         </div>
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 Media Streaming App. All rights reserved.</p>
-      <p><a href="mailto:shintopc@gmail.com">shintopc@gmail.com</a></p>
-
+      <p><a href="#"shintopc@gmail
+com</a></p>
     </footer>
   </div>
 
