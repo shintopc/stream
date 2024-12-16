@@ -185,6 +185,10 @@ marquee {
     color: #FFFF00; /* Neon yellow text for marquee */
     font-size: 16px;
 }
+
+
+
+
 /* Floating Button */
 .floating-container {
   position: fixed;
@@ -192,53 +196,50 @@ marquee {
   left: 10px;
   z-index: 1000;
 }
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-.main-button {
-  width: 50px;
-  height: 50px;
+#mainButton {
+  width: 60px;
+  height: 60px;
   border: none;
   border-radius: 50%;
-  background-color: #FF5722; /* Orange shade */
+  background-color: #4CAF50;
   color: white;
   font-size: 24px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-.main-button:hover {
-  background-color: #FF7043;
-}
-
-#secondary-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-  transition: opacity 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#mainButton:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.parallelButton {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.parallelButton:hover {
+  background-color: #007bb5;
 }
 
 .hidden {
   display: none;
-}
-
-.radio-button, .tv-button {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #1E88E5; /* Blue */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.radio-button:hover {
-  background-color: #42A5F5;
-}
-
-.tv-button:hover {
-  background-color: #FF7043; /* Light Coral for TV */
 }
