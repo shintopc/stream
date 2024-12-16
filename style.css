@@ -14,45 +14,6 @@ body, html {
   
 }
 
-.tab-container {
-  display: flex;
-  justify-content: center;
-  background-color: #222;
-}
-
-.tab {
-  flex: 1;
-  padding: 15px 0;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-.tab:hover {
-  transform: scale(1.05);
-}
-
-/* Radio Tab Style */
-.tab-radio {
-  background-color: #FF4500; /* Orange-Red */
-}
-
-.tab-radio:hover {
-  background-color: #FF6347; /* Light Coral */
-}
-
-/* TV Tab Style */
-.tab-tv {
-  background-color: #1E90FF; /* Dodger Blue */
-}
-
-.tab-tv:hover {
-  background-color: #6495ED; /* Cornflower Blue */
-}
-
 
 /* Background container */
 #bg-wrap {
@@ -174,14 +135,14 @@ svg {
   background-size: cover;
 }
 
-/* Background images for TV buttons 
+/* Background images for TV buttons */
 #tv1 { background-image: url('https://yt3.googleusercontent.com/f6tEYjB34zD0Z4U93w9UFJkBiGpdryrUj8KKS9IuIEjVvD12Bm9m5n5aBfwWbgIRB-r5FOYyCjc=s160-c-k-c0x00ffffff-no-rj'); }
 #tv2 { background-image: url('https://yt3.googleusercontent.com/gizUTRt3mGlEsAEfvvLWR9PIaTAeOhXBT89pTuQ6CcrAww1tWRlcskmWVK9sahEf-KWZZ3iJCw=s160-c-k-c0x00ffffff-no-rj'); }
 #tv3 { background-image: url('https://yt3.googleusercontent.com/eqbZ6s1e5--bLtQT-w_COL6u7ajCp_cUwtc-yXUntjsmXwjflWaFgKRrP0ao02Zhw3e_7zZIfA=s160-c-k-c0x00ffffff-no-rj'); }
 #tv4 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
 #tv5 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_nNiHUlaF-60oiZqJHFF1N3uFek7UokY1i1OkmtOyW7gpQ=s160-c-k-c0x00ffffff-no-rj'); }
 #tv6 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
- Radio and TV Player */
+/* Radio and TV Player */
 .player, .tv-player {
     width: calc(330px + 20px); /* width of 2 buttons + gap */
     max-width: 600px;
@@ -223,4 +184,61 @@ a {
 marquee {
     color: #FFFF00; /* Neon yellow text for marquee */
     font-size: 16px;
+}
+/* Floating Button */
+.floating-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.main-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FF5722; /* Orange shade */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #FF7043;
+}
+
+#secondary-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.radio-button, .tv-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #1E88E5; /* Blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.radio-button:hover {
+  background-color: #42A5F5;
+}
+
+.tv-button:hover {
+  background-color: #FF7043; /* Light Coral for TV */
 }
