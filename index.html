@@ -9,12 +9,16 @@
 
 <body>
   
-  <!-- Floating Button -->
-  <div class="floating-container">
-    <button class="main-button" onclick="toggleButtons()">☰</button>
-    <div id="secondary-buttons" class="hidden">
-      <a href="radio.html" class="button radio-button">Radio</a>
-      <a href="tv.html" class="button tv-button">TV</a>
+   <div class="floating-container">
+    <div class="button-row">
+      <!-- Main Button -->
+      <button id="mainButton" onclick="toggleButtons()">☰</button>
+
+      <!-- Additional Buttons -->
+      <div id="additionalButtons" class="hidden">
+        <a href="https://www.example1.com" target="_blank" class="parallelButton">Music</a>
+        <a href="https://www.example2.com" target="_blank" class="parallelButton">TV</a>
+      </div>
     </div>
   </div>
   
