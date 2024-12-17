@@ -96,45 +96,6 @@ svg {
     width: 100%;
     height: 100%;
 }
-/* Set background image for the first button */
-#radio1 {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Club_FM_Logo.jpg');
-  background-size: cover;
-}
-
-#radio2 {
-    background-image: url('https://onlineradiofm.in/assets/image/radio/180/unnamed.webp');
-  background-size: cover;
-}
-#radio3 {
-    background-image: url('https://onlineradiofm.in/assets/image/radio/180/Radio-Mattoli.jpg');
-  background-size: cover;
-}
-#radio4 {
-    background-image: url('https://radiosindia.com/images/radiokeralam.jpg');
-  background-size: cover;
-}
-#radio5 {
-    background-image: url('https://liveradios.in/wp-content/uploads/malayalamradio.jpg');
-  background-size: cover;
-}
-#radio6 {
-    background-image: url('https://liveradios.in/wp-content/uploads/radiomalayalamusa.jpg');
-  background-size: cover;
-}
-#radio7 {
-    background-image: url('https://onlineradiofm.in/assets/image/radio/180/Mazhavil-FM.jpg');
-  background-size: cover;
-}
-#radio8 {
-    background-image: url('https://liveradios.in/wp-content/uploads/radiolemon.jpg');
-  background-size: cover;
-}
-#radio9 {
-    background-image: url('https://onlineradiofm.in/assets/image/radio/180/radio-media-village.png');
-  background-size: cover;
-}
-
 /* Background images for TV buttons */
 #tv1 { background-image: url('https://yt3.googleusercontent.com/f6tEYjB34zD0Z4U93w9UFJkBiGpdryrUj8KKS9IuIEjVvD12Bm9m5n5aBfwWbgIRB-r5FOYyCjc=s160-c-k-c0x00ffffff-no-rj'); }
 #tv2 { background-image: url('https://yt3.googleusercontent.com/gizUTRt3mGlEsAEfvvLWR9PIaTAeOhXBT89pTuQ6CcrAww1tWRlcskmWVK9sahEf-KWZZ3iJCw=s160-c-k-c0x00ffffff-no-rj'); }
@@ -142,24 +103,21 @@ svg {
 #tv4 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
 #tv5 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_nNiHUlaF-60oiZqJHFF1N3uFek7UokY1i1OkmtOyW7gpQ=s160-c-k-c0x00ffffff-no-rj'); }
 #tv6 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
-/* Radio and TV Player */
-.player, .tv-player {
-    width: calc(330px + 20px); /* width of 2 buttons + gap */
+/* Video and iFrame Player */
+
+.tv-player {
+    margin: 20px auto;
     max-width: 600px;
-    margin: 20px 0;
-  
-    
-    
 }
 
-audio, video {
+video, iframe {
     width: 100%;
+    height: 315px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-/* TV Player */
-#tvPlayer {
-    height: 315px;
-}
 
 /* Footer Text */
 footer {
