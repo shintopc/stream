@@ -135,6 +135,19 @@ svg {
   background-size: cover;
 }
 
+#radio10 {
+    background-image: url('https://static.mytuner.mobi/media/tvos_radios/187/kumar-sanu.fcf44709.jpg');
+  background-size: cover;
+}
+#radio11 {
+    background-image: url('');
+  background-size: cover;
+}
+#radio12 {
+    background-image: url('');
+  background-size: cover;
+}
+
 
 /* Radio and TV Player */
 .player, .tv-player {
