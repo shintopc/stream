@@ -135,13 +135,7 @@ svg {
   background-size: cover;
 }
 
-/* Background images for TV buttons */
-#tv1 { background-image: url('https://yt3.googleusercontent.com/f6tEYjB34zD0Z4U93w9UFJkBiGpdryrUj8KKS9IuIEjVvD12Bm9m5n5aBfwWbgIRB-r5FOYyCjc=s160-c-k-c0x00ffffff-no-rj'); }
-#tv2 { background-image: url('https://yt3.googleusercontent.com/gizUTRt3mGlEsAEfvvLWR9PIaTAeOhXBT89pTuQ6CcrAww1tWRlcskmWVK9sahEf-KWZZ3iJCw=s160-c-k-c0x00ffffff-no-rj'); }
-#tv3 { background-image: url('https://yt3.googleusercontent.com/eqbZ6s1e5--bLtQT-w_COL6u7ajCp_cUwtc-yXUntjsmXwjflWaFgKRrP0ao02Zhw3e_7zZIfA=s160-c-k-c0x00ffffff-no-rj'); }
-#tv4 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
-#tv5 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_nNiHUlaF-60oiZqJHFF1N3uFek7UokY1i1OkmtOyW7gpQ=s160-c-k-c0x00ffffff-no-rj'); }
-#tv6 { background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_n3GwS5AiD5wcCQcacdBVIqedZEtVm4H1EsLlxB0li41mA=s160-c-k-c0x00ffffff-no-rj'); }
+
 /* Radio and TV Player */
 .player, .tv-player {
     width: calc(330px + 20px); /* width of 2 buttons + gap */
@@ -149,17 +143,13 @@ svg {
     margin: 20px 0;
   
     
-    
 }
 
 audio, video {
     width: 100%;
 }
 
-/* TV Player */
-#tvPlayer {
-    height: 315px;
-}
+
 
 /* Footer Text */
 footer {
