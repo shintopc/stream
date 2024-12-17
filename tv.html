@@ -93,18 +93,18 @@
       <div class="row">
                     <div id="tv4" class="button" data-video="https://www.youtube.com/embed/YGEgelAiUf0"></div>
                     <div id="tv5" class="button" data-video="https://www.youtube.com/embed/tgBTspqA5nY"></div>
-                    <div id="tv6" class="button" data-video="https://www.youtube.com/embed/YGEgelAiUf0"></div>
+                    <div id="tv6" class="button" data-hls="https://dr1zhpsuem5f4.cloudfront.net/master_2000.m3u8"></div>
 
         </div>
 
       <!-- TV Player -->
 
       <div class="tv-player">
-                            <iframe id="tvPlayer"
-                                frameborder="1"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-          </div>
+      <video id="hlsPlayer" controls style="display: none;"></video>
+      <iframe id="ytPlayer" style="display: none;" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
 
     </div>
               <div class="marquee-container">
@@ -119,6 +119,7 @@
   </div>
 
   <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
         <script src="scripts.js"></script>
 </body>
 
