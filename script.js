@@ -33,6 +33,7 @@ window.addEventListener("wheel", function (event) {
 function toggleButtons() {
   const additionalButtons = document.getElementById("additionalButtons");
   additionalButtons.classList.toggle("hidden");
+}
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistrations().then((registrations) => {
         registrations.forEach((registration) => {
