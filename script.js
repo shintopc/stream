@@ -41,4 +41,12 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+document.addEventListener("visibilitychange", function () {
+  const player = document.getElementById("radioPlayer");
+  if (document.hidden) {
+    if (!player.paused) {
+      player.play(); // Resume playback if tab is hidden
+    }
+  }
+});
 
