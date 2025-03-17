@@ -2,6 +2,10 @@
   "short_name": "StreaMix",
   "name": "StreaMix Web App",
   "description": "A sample PWA for StreaMix's web app.",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "start_url": "/?nocache=true",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -14,8 +18,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/?nocache=true",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "permissions": ["background-audio"],
+  "background_audio": {
+    "enabled": true
+  }
 }
