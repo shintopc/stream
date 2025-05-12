@@ -30,10 +30,10 @@ window.addEventListener("wheel", function (event) {
     window.scrollBy(0, scrollAmount); // Scroll down
   }
 });
-function toggleButtons() {
-  const additionalButtons = document.getElementById("additionalButtons");
-  additionalButtons.classList.toggle("hidden");
-}
+    function toggleButtons() {
+      const menu = document.getElementById("additionalButtons");
+      menu.classList.toggle("open");
+    }
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistrations().then((registrations) => {
         registrations.forEach((registration) => {
