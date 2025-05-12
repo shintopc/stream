@@ -47,6 +47,6 @@ window.addEventListener("wheel", function (event) {
   }
 });
 function toggleButtons() {
-  const additionalButtons = document.getElementById("additionalButtons");
-  additionalButtons.classList.toggle("hidden");
-}
+      const menu = document.getElementById("additionalButtons");
+      menu.classList.toggle("open");
+    }
