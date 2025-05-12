@@ -220,7 +220,7 @@ marquee {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Floating menu container */
+/* Floating menu */
 .floating-container {
   position: fixed;
   top: 20px;
@@ -228,7 +228,7 @@ marquee {
   z-index: 999;
 }
 
-/* Main button */
+/* Main circular image button */
 #mainButton {
   background: none;
   border: none;
@@ -241,45 +241,57 @@ marquee {
   transform: scale(1.1);
 }
 
-/* Main button image */
 .button-photo {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   border: 2px solid white;
 }
 
-/* Submenu */
-#additionalButtons {
-  margin-top: 10px;
+/* Submenu base */
+.submenu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
+  gap: 12px;
+  margin-top: 12px;
   padding: 10px;
   border-radius: 10px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.2);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
 }
 
-/* Submenu link buttons */
+/* When open */
+.submenu.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Submenu buttons with different colors */
 .dropdownButton {
-  padding: 12px 20px;
-  background-color: #800000cc;
-  color: #fff;
-  text-decoration: none;
+  padding: 10px 18px;
   border-radius: 6px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
   text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s;
 }
 
-.dropdownButton:hover {
-  background-color: #007bb5cc;
-}
+/* Individual colors */
+.btn1 { background-color: rgba(255, 99, 71, 0.8); }     /* Tomato */
+.btn2 { background-color: rgba(60, 179, 113, 0.8); }    /* MediumSeaGreen */
+.btn3 { background-color: rgba(65, 105, 225, 0.8); }    /* RoyalBlue */
+.btn4 { background-color: rgba(255, 165, 0, 0.8); }     /* Orange */
 
-/* Hidden class to hide submenu */
-.hidden {
-  display: none;
-}
+/* Hover effects */
+.btn1:hover { background-color: rgba(255, 99, 71, 1); }
+.btn2:hover { background-color: rgba(60, 179, 113, 1); }
+.btn3:hover { background-color: rgba(65, 105, 225, 1); }
+.btn4:hover { background-color: rgba(255, 165, 0, 1); }
