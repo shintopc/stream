@@ -220,14 +220,15 @@ marquee {
   transition: background-color 0.3s, transform 0.2s;
 }
 
+/* Floating container positioned at top-left */
 .floating-container {
   position: fixed;
-  top: 30px; /* Top-left positioning */
+  top: 30px;
   left: 30px;
   z-index: 1000;
 }
 
-/* Main Button */
+/* Main circular button */
 #mainButton {
   background-color: #6200ea;
   color: white;
@@ -245,11 +246,18 @@ marquee {
   transform: scale(1.1);
 }
 
-/* Submenu directly below main button */
+/* Submenu container: vertical, with spacing and transparency */
 .submenu {
   display: flex;
   flex-direction: column;
   margin-top: 10px; /* space below main button */
+  gap: 10px;        /* vertical space between buttons */
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent bg */
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px); /* optional blur */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Hide submenu initially */
@@ -257,7 +265,7 @@ marquee {
   display: none;
 }
 
-/* Submenu button styles */
+/* Individual submenu buttons */
 .submenuButton {
   padding: 10px 15px;
   color: white;
@@ -266,14 +274,15 @@ marquee {
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: transform 0.2s, background-color 0.3s;
+  text-align: center;
 }
 
 .submenuButton:hover {
   transform: translateX(5px);
 }
 
-/* Colorful styles */
-.music { background-color: #ff5722; }
-.tv { background-color: #4caf50; }
-.movies { background-color: #2196f3; }
-.m2 { background-color: #e91e63; }
+/* Colorful styles for each submenu */
+.music { background-color: #ff5722; }   /* Deep Orange */
+.tv { background-color: #4caf50; }      /* Green */
+.movies { background-color: #2196f3; }  /* Blue */
+.m2 { background-color: #e91e63; }      /* Pink */
