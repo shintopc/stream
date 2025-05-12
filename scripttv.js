@@ -46,7 +46,23 @@ window.addEventListener("wheel", function (event) {
     window.scrollBy(0, scrollAmount); // Scroll down
   }
 });
-function toggleButtons() {
-      const menu = document.getElementById("additionalButtons");
-      menu.classList.toggle("open");
+const mainButton = document.getElementById("mainButton");
+  const submenu = document.getElementById("additionalButtons");
+
+  function toggleButtons() {
+    submenu.classList.toggle("open");
+  }
+
+  // Close submenu on outside click or submenu link click
+  document.addEventListener("click", function (e) {
+    if (!mainButton.contains(e.target) && !submenu.contains(e.target)) {
+      submenu.classList.remove("open");
     }
+  });
+
+  // Close submenu when any link inside it is clicked
+  document.querySelectorAll(".dropdownButton").forEach(btn => {
+    btn.addEventListener("click", () => {
+      submenu.classList.remove("open");
+    });
+  });
