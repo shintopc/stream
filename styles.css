@@ -220,29 +220,32 @@ marquee {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-#mainButton:hover {
-  background-color: #45a049;
-  transform: scale(1.1);
+/* Make submenu buttons appear vertically */
+#additionalButtons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  position: absolute;
+  top: 60px; /* Adjust based on your main button height */
+  left: 10px; /* Adjust position if needed */
+  z-index: 1000;
+  gap: 10px; /* Space between buttons */
 }
 
-.parallelButton {
-  display: inline-block;
-  padding: 20px 15px;
-  font-size: 18px;
-  background-color: #800000;
-  color: white;
-  text-decoration: none;
+/* Main button styling */
+#mainButton {
+  padding: 15px 20px;
+  font-size: 20px;
   border: none;
-  border-radius: 5px;
-  text-align: center;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.parallelButton:hover {
-  background-color: #007bb5;
+/* Optional: Position the floating container */
+.floating-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
-.hidden {
-  display: none;
-}
