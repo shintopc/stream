@@ -9,18 +9,19 @@
 
 <body>
   
-   <div class="floating-container">
-    <div class="button-row">
-      <!-- Main Button -->
-      <button id="mainButton" onclick="toggleButtons()">☰</button>
+  <div class="floating-container">
+    <button id="mainButton" onclick="toggleButtons()">
+      <img src="icons/circular_menu_button.png" alt="Menu" class="button-photo" />
+    </button>
 
-      <!-- Additional Buttons -->
-      <div id="additionalButtons" class="hidden">
-        <a href="index.html" target="_blank" class="parallelButton">Music</a>
-        <a href="tv.html" target="_blank" class="parallelButton">&nbsp;&nbsp;&nbsp;TV&nbsp;&nbsp;&nbsp;&nbsp;    </a>
-      </div>
+    <div id="additionalButtons" class="submenu">
+      <a href="index.html" target="_blank" class="dropdownButton btn1">🎵 Music</a>
+      <a href="tv.html" target="_blank" class="dropdownButton btn2">📺 TV</a>
+      <a href="https://netfree.cc/mobile/home" target="_blank" class="dropdownButton btn3">🎬 Movies</a>
+      <a href="https://moviebox.ng/" target="_blank" class="dropdownButton btn4">📱 M2</a>
     </div>
   </div>
+
   
 <!-- Background SVG Animation -->
 <div id="bg-wrap">
