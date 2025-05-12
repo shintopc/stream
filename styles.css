@@ -220,32 +220,65 @@ marquee {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Make submenu buttons appear vertically */
-#additionalButtons {
-  display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  position: absolute;
-  top: 60px; /* Adjust based on your main button height */
-  left: 10px; /* Adjust position if needed */
-  z-index: 1000;
-  gap: 10px; /* Space between buttons */
-}
-
-/* Main button styling */
-#mainButton {
-  padding: 15px 20px;
-  font-size: 20px;
-  border: none;
-  background-color: #333;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* Optional: Position the floating container */
 .floating-container {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  z-index: 1000;
 }
+
+/* Main Button */
+#mainButton {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#mainButton:hover {
+  background-color: #3700b3;
+  transform: scale(1.1);
+}
+
+/* Submenu container */
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  gap: 10px;
+}
+
+/* Hide by default */
+.hidden {
+  display: none;
+}
+
+/* Individual submenu buttons */
+.submenuButton {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.submenuButton:hover {
+  transform: translateX(-5px);
+}
+
+/* Colorful styles */
+.music { background-color: #ff5722; }   /* Deep Orange */
+.tv { background-color: #4caf50; }      /* Green */
+.movies { background-color: #2196f3; }  /* Blue */
+.m2 { background-color: #e91e63; }      /* Pink */
+
 
