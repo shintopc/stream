@@ -98,7 +98,7 @@ svg {
 }
 /* Set background image for the first button */
 #radio1 {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Club_FM_Logo.jpg');
+    background-image: url('icons/hindiradio/1.png');
   background-size: cover;
 }
 
