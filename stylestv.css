@@ -222,9 +222,21 @@ marquee {
 .btn2 { background-color: rgba(60, 179, 113, 0.8); }    /* MediumSeaGreen */
 .btn3 { background-color: rgba(65, 105, 225, 0.8); }    /* RoyalBlue */
 .btn4 { background-color: rgba(255, 165, 0, 0.8); }     /* Orange */
+.btn5 { background-color: rgba(138, 43, 226, 0.8); }    /* BlueViolet */
+.btn6 { background-color: rgba(255, 20, 147, 0.8); }    /* DeepPink */
+.btn7 { background-color: rgba(0, 206, 209, 0.8); }     /* DarkTurquoise */
+.btn8 { background-color: rgba(154, 205, 50, 0.8); }    /* YellowGreen */
+.btn9 { background-color: rgba(255, 105, 180, 0.8); }   /* HotPink */
+.btn10 { background-color: rgba(70, 130, 180, 0.8); }   /* SteelBlue */
 
 /* Hover effects */
 .btn1:hover { background-color: rgba(255, 99, 71, 1); }
 .btn2:hover { background-color: rgba(60, 179, 113, 1); }
 .btn3:hover { background-color: rgba(65, 105, 225, 1); }
 .btn4:hover { background-color: rgba(255, 165, 0, 1); }
+.btn5:hover { background-color: rgba(138, 43, 226, 0.8); }    /* BlueViolet */
+.btn6:hover { background-color: rgba(255, 20, 147, 0.8); }    /* DeepPink */
+.btn7:hover { background-color: rgba(0, 206, 209, 0.8); }     /* DarkTurquoise */
+.btn8:hover { background-color: rgba(154, 205, 50, 0.8); }    /* YellowGreen */
+.btn9:hover { background-color: rgba(255, 105, 180, 0.8); }   /* HotPink */
+.btn10:hover{ background-color: rgba(70, 130, 180, 0.8); }   /* SteelBlue */
