@@ -18,7 +18,7 @@
 
 ## 🌐 Live Demo
 
-Try the live version: [stream](https://stream-hzobz9e5o-shintos-projects-b1c0b690.vercel.app)
+Try the live version: [stream](https://stream-sooty-three.vercel.app/)
 
 ## 🛠️ Built With
 
