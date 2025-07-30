@@ -251,6 +251,7 @@ marquee {
 }
 
 /* Submenu base */
+/* Submenu base */
 .submenu {
   display: flex;
   flex-direction: column;
@@ -262,15 +263,25 @@ marquee {
   background-color: rgba(0, 0, 0, 0.2);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
   opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* When open */
 .submenu.open {
-  max-height: 500px;
+  max-height: 300px;             /* Set max height for scroll */
+  overflow-y: auto;              /* Enable vertical scroll */
   opacity: 1;
+  scrollbar-width: none;         /* Hide scrollbar in Firefox */
 }
+
+/* Hide scrollbar in WebKit (Chrome, Safari) */
+.submenu.open::-webkit-scrollbar {
+  display: none;
+}
+
 
 /* Submenu buttons with different colors */
 .dropdownButton {
