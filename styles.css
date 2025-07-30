@@ -306,6 +306,17 @@ marquee {
 .btn8 { background-color: rgba(154, 205, 50, 0.8); }    /* YellowGreen */
 .btn9 { background-color: rgba(255, 105, 180, 0.8); }   /* HotPink */
 .btn10 { background-color: rgba(70, 130, 180, 0.8); }   /* SteelBlue */
+.btn11 { background-color: rgba(255, 140, 0, 0.8); }     /* DarkOrange */
+.btn12 { background-color: rgba(0, 191, 255, 0.8); }     /* DeepSkyBlue */
+.btn13 { background-color: rgba(199, 21, 133, 0.8); }    /* MediumVioletRed */
+.btn14 { background-color: rgba(46, 139, 87, 0.8); }     /* SeaGreen */
+.btn15 { background-color: rgba(186, 85, 211, 0.8); }    /* MediumOrchid */
+.btn16 { background-color: rgba(72, 61, 139, 0.8); }     /* DarkSlateBlue */
+.btn17 { background-color: rgba(244, 164, 96, 0.8); }    /* SandyBrown */
+.btn18 { background-color: rgba(60, 179, 255, 0.8); }    /* LightSkyBlue */
+.btn19 { background-color: rgba(255, 69, 0, 0.8); }      /* OrangeRed */
+.btn20 { background-color: rgba(0, 128, 128, 0.8); }     /* Teal */
+
 
 /* Hover effects */
 .btn1:hover { background-color: rgba(255, 99, 71, 1); }
@@ -318,3 +329,14 @@ marquee {
 .btn8:hover { background-color: rgba(154, 205, 50, 0.8); }    /* YellowGreen */
 .btn9:hover { background-color: rgba(255, 105, 180, 0.8); }   /* HotPink */
 .btn10:hover{ background-color: rgba(70, 130, 180, 0.8); }   /* SteelBlue */
+.btn11:hover { background-color: rgba(255, 140, 0, 1); }
+.btn12:hover { background-color: rgba(0, 191, 255, 1); }
+.btn13:hover { background-color: rgba(199, 21, 133, 1); }
+.btn14:hover { background-color: rgba(46, 139, 87, 1); }
+.btn15:hover { background-color: rgba(186, 85, 211, 1); }
+.btn16:hover { background-color: rgba(72, 61, 139, 1); }
+.btn17:hover { background-color: rgba(244, 164, 96, 1); }
+.btn18:hover { background-color: rgba(60, 179, 255, 1); }
+.btn19:hover { background-color: rgba(255, 69, 0, 1); }
+.btn20:hover { background-color: rgba(0, 128, 128, 1); }
+
